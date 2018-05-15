@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="breakers.js"></script>
+
+		<style>
+			#headers{
+				position:absolute;
+				list-style-type:none;
+			}
+			#panel{
+				border: 1px solid black;
+				/*border-radius:20px;*/
+				height:95%;
+				width:100%;
+			}
+			#table{
+				width: 100%;
+				max-height: 4%
+			}
+			p{
+				display:inline;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Display game related info -->
+		<table style="width:100%">
+		  <tr>
+		    <td>Score: <p id="score">0</p></td>
+		    <td>Lives: <p id="lives">3</p></td>
+		    <td>Level: <p id="level">1</p></td>
+		  </tr>
+		</table>
+
+		<!-- Canvas-->
+		<canvas id="panel" width="1000" height="1000"></canvas>
+
+		<script>
+			$(function() {
+				draw();
+			});
+		</script>
+	</body>
+
+</html>
